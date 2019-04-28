@@ -6,8 +6,9 @@ body{
     overflow-x: hidden;
     
 }
-.container{
-    width:80%;
+.row{
+    width:100%;
+    margin: auto;
     padding: 1px 15px;
 }
 
