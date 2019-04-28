@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    
 }
 .container{
     margin:auto;
@@ -54,31 +55,37 @@ img{
     border-bottom: 4px solid #56a79a;
 }
 /* NAVBAR */
-#main-header{
-    background: #F18330;
-    border-bottom: 1px solid #56a79a;
-    font-size: 10px;
-}
-
-#navbar{
-    text-transform: uppercase;
-}
-
-#navbar li{
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    position: fixed;
+    text-align: center;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
     display: inline;
-    padding-right: 20px;
-    list-style: none;
-}
-
-#navbar a{
+    
+  }
+  nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
     text-decoration: none;
-    color: #fff;
-}
-
-#navbar a:hover{
-    color: #56a79a;
-    border-bottom: 3px solid #56a79a;
-}
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+  }
+  nav li:hover {
+    background-color: #444;
+  }
+  nav a#openup {
+    display: none;
+  }
 
 
 /* Showcase 
@@ -178,3 +185,62 @@ img{
     color: #fff;
     padding: 15px;
 }
+
+/* Medias query*/
+@media screen and (max-width: 580px) {
+    nav {
+      height: auto;
+      border-bottom: 0;
+    }
+    nav ul {
+      display: none;
+      height: auto;
+    }
+    nav li {
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+      background: #333;
+      border-bottom: 1px solid #555;
+    }
+    nav a:hover {
+      background: #444;
+    }
+    nav a#openup:after {
+      content: "|||";
+      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-90deg);
+      /* Safari and Chrome */
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+    }
+    nav a#openup {
+      display: block;
+      background-color: #333;
+      width: 100%;
+      position: relative;
+    }
+  }
+  .cf:before, .cf:after {
+    content: "";
+    display: table;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  
+  
+  /* For IE 6/7 (trigger hasLayout) */
