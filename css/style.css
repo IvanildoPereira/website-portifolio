@@ -1,0 +1,180 @@
+body{
+    font-family: 'Open-sans', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    margin:auto;
+    width:80%;
+    padding: 1px 15px;
+}
+
+a{
+    text-decoration: none;
+}
+section{
+    padding:50px;
+}
+img{
+    width: 100%;
+}
+
+/* Global class*/
+#skills{
+    text-align: left;
+}
+
+.green{
+    color: #0BA783;
+}
+
+.btn-send{
+    background: #444444;
+    border: none;
+    border-radius:5px;
+    color: #fff;
+    width: 220px;
+    margin:40px;
+    height: 50px;
+    
+}
+.btn-send i{
+    margin-right: 4px;
+}
+.btn-send:hover{
+    background: #FFFFFF;
+    color: #8E8E8E;
+}
+
+
+
+.border{
+    border-bottom: 4px solid #56a79a;
+}
+/* NAVBAR */
+#main-header{
+    background: #F18330;
+    border-bottom: 1px solid #56a79a;
+    font-size: 10px;
+}
+
+#navbar{
+    text-transform: uppercase;
+}
+
+#navbar li{
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#navbar a:hover{
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+}
+
+
+/* Showcase 
+/**/
+#showcase {
+    background: url(../img/showcase.jpg) no-repeat center/cover;
+}
+#showcase hr{
+    width: 80%;
+}
+
+#showcase .row{
+    height: 100vh;
+}
+
+#showcase .icons{
+    font-size:50px;
+}
+
+#showcase i{
+    color: #000000;
+}
+
+/* Sobre */
+#about{
+    background: #2B2B2B;
+}
+
+#about h2{
+    color:#FFFFFF;
+
+}
+#about p{
+    color: #6B6B6B;
+}
+
+#about ul{
+    color: #6B6B6B;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+/* Resumo */
+#resume{
+    background: #FFFFFF;
+}
+
+#resume h1{
+}
+#resume p{
+    color: #6B6B6B;
+}
+
+#resume ul{
+    padding:0;
+    text-align: left;
+    list-style: none;
+}
+
+#resume h2{
+    text-align: left;
+}
+
+/*portifolio*/
+#portifolio{
+    background: #EBEEEE;
+    box-sizing: border-box; 
+    margin: 15px;
+}
+
+#portifolio i{
+    margin-right:3px;
+}
+#portifolio a{
+    display: block;
+    padding: 10px;
+    margin: 4px;
+}
+
+#portifolio a:hover{
+    background: #EECE1A;
+}
+
+.light{
+    background:#C4C4C4;
+    color: #000000;
+}
+
+.dark{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+#footer{
+    background: #0F0F0F;
+    color: #fff;
+    padding: 15px;
+}
