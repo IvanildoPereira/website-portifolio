@@ -244,3 +244,6 @@ nav {
   
   
   /* For IE 6/7 (trigger hasLayout) */
+.btn-send{
+    width: 100%;
+}
