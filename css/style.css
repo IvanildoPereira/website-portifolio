@@ -245,5 +245,6 @@ nav {
   
   /* For IE 6/7 (trigger hasLayout) */
 .btn-send{
+    display: inline-block;
     width: 100%;
 }
